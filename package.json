@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "name": "qhawk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "client": "cd Client && npm run dev",
+    "server": "cd Server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
