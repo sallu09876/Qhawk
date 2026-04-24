@@ -50,6 +50,7 @@ http://localhost:5173
 * Vite
 * Tailwind CSS
 * Node.js / Express (Backend)
+* MongoDB (NoSQL Database)
 
 ---
 
@@ -64,6 +65,7 @@ Client/
  │   └── main.jsx
 Server/
  │   ├── models/
+ │   ├── controllers/
  │   ├── routes/
  │   └── server.js
 ```
