@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 // ROUTES
-app.use("/api/auth", require("./routes/Auth"));
+app.use("/api/auth", require("./routes/AuthRoute"));
 
 // CONNECT DB
 mongoose

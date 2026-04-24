@@ -1,11 +1,9 @@
-const express = require("express");
-const router = express.Router();
 const User = require("../models/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
 // 🔹 SIGNUP
-router.post("/signup", async (req, res) => {
+exports.signup = async (req, res) => {
   try {
     const { username, email, password } = req.body;
 
@@ -30,10 +28,10 @@ router.post("/signup", async (req, res) => {
   } catch (err) {
     res.status(500).json({ msg: "Server error" });
   }
-});
+};
 
 // 🔹 LOGIN
-router.post("/login", async (req, res) => {
+exports.login = async (req, res) => {
   try {
     const { username, email, password } = req.body;
 
@@ -76,6 +74,4 @@ router.post("/login", async (req, res) => {
     console.error("Login error:", err);
     res.status(500).json({ msg: "Server error" });
   }
-});
-
-module.exports = router;
+};
