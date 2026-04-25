@@ -48,9 +48,9 @@ http://localhost:5173
 
 * React
 * Vite
-* Tailwind CSS
+* Tailwind CSS 
 * Node.js / Express (Backend)
-* MongoDB (NoSQL Database)
+* PostgreSQL (Database)
 
 ---
 
@@ -67,6 +67,7 @@ Server/
  │   ├── models/
  │   ├── controllers/
  │   ├── routes/
+ │   ├── database/
  │   └── server.js
 ```
 
