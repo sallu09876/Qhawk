@@ -8,8 +8,8 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "client": "cd Client && npm run dev",
     "server": "cd Server && npm run dev",
+    "client": "cd Client && npm run dev",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
