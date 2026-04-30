@@ -7,6 +7,7 @@ import Analytics from "./pages/Analytics";
 import Team from "./pages/Team";
 import Settings from "./pages/Settings";
 import Catalogue from "./pages/Catalogue";
+import Products from "./pages/Products";
 import { AuthProvider } from "./context/AuthContext";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import Layout from "./components/Layout";
@@ -23,6 +24,7 @@ function App() {
             <Route element={<Layout />}>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/catalogue" element={<Catalogue />} />
+              <Route path="/products" element={<Products />} />
               <Route path="/leads" element={<Leads />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/team" element={<Team />} />

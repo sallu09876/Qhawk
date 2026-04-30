@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import { Link } from "react-router-dom";
 
 // ─── Icons ────────────────────────────────────────────────────────────────────
 const FolderIcon = ({ size = 18, color = "white" }) => (
@@ -308,13 +309,14 @@ function DetailPanel({ category }) {
             </div>
 
             {/* Buttons */}
-            <button
+            <Link
+                to="/products"
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-white text-sm font-semibold transition-opacity hover:opacity-90"
                 style={{ background: "linear-gradient(135deg, #4f7df9, #3b5fe0)" }}
             >
                 <CartIcon size={15} />
                 View Products
-            </button>
+            </Link>
             <button className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-gray-700 text-sm font-semibold border border-gray-200 bg-white hover:bg-gray-50 transition-colors">
                 <PlusIcon size={15} color="#374151" />
                 Add Subcategory
@@ -354,14 +356,15 @@ export default function Catalogue() {
                     <p className="text-sm text-gray-500 mt-0.5">Browse our complete product hierarchy</p>
                 </div>
                 <div className="flex items-center gap-2.5">
-                    <button
+                    <Link
+                        to="/products"
                         className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-white text-xs sm:text-sm font-semibold transition-opacity hover:opacity-90"
                         style={{ background: "linear-gradient(135deg, #a855f7, #7c3aed)" }}
                     >
                         <CartIcon size={15} />
                         <span className="hidden xs:inline">View All Products</span>
                         <span className="inline xs:hidden">View All Products</span>
-                    </button>
+                    </Link>
                     <button
                         className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-white text-xs sm:text-sm font-semibold transition-opacity hover:opacity-90"
                         style={{ background: "linear-gradient(135deg, #4f7df9, #3b5fe0)" }}
