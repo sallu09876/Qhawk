@@ -11,6 +11,9 @@ import Products from "./pages/Products";
 import { AuthProvider } from "./context/AuthContext";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 import Layout from "./components/Layout";
+import OrderReceiving from "./pages/sales/OrderReceiving";
+import OrderApprove from "./pages/sales/OrderApprove";
+import OrderCancel from "./pages/sales/OrderCancel";
 
 function App() {
   return (
@@ -29,6 +32,11 @@ function App() {
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/team" element={<Team />} />
               <Route path="/settings" element={<Settings />} />
+              
+              {/* Sales Routes */}
+              <Route path="/sales/order-receiving" element={<OrderReceiving />} />
+              <Route path="/sales/order-approve" element={<OrderApprove />} />
+              <Route path="/sales/order-cancel" element={<OrderCancel />} />
             </Route>
           </Route>
         </Routes>
